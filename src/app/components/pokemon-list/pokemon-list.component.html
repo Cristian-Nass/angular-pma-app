@@ -1,0 +1,6 @@
+<p>Pokemons list</p>
+<div *ngFor="let pokemon of loadedData.results">
+  {{ pokemon.name }}
+</div>
+<button [disabled]="!loadedData.previous" (click)="previous()">previous</button>
+<button [disabled]="!loadedData.next" (click)="next()">Next</button>
